@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import it.uspread.android.USpreadItApplication;
 import it.uspread.android.data.Message;
 import it.uspread.android.data.Status;
 import it.uspread.android.data.User;
@@ -65,6 +66,8 @@ public class CoreTest implements Core {
      */
     public CoreTest() {
         try {
+            USpreadItApplication.getInstance().clearCaches();
+
             User crom = new User("crom", "crom", "crom@free.fr");
             createUser(crom);
             User chuck = new User("chuck", "chuck", "chuck@free.fr");
@@ -72,7 +75,12 @@ public class CoreTest implements Core {
             User gandalf = new User("gandalf", "gandalf", "gandalf@free.fr");
             createUser(gandalf);
 
-            User current = userConnected;
+            User current = null;
+            for (User key : listUser.keySet()) {
+                if (key.getUsername().equals(USpreadItApplication.getInstance().getSessionManager().getUsername())) {
+                    current = key;
+                }
+            }
             userConnected = crom;
 
             Message msg = new Message("L'albatros");
