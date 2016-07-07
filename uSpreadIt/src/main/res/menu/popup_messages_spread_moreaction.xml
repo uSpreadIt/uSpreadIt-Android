@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"/>
+
+    <item
+        android:id="@+id/action_report"
+        android:title="@string/action_report">
+        <menu>
+            <item
+                android:id="@+id/action_report_spam"
+                android:title="@string/report_spam"/>
+            <item
+                android:id="@+id/action_report_inappropriate"
+                android:title="@string/report_inappropriate"/>
+            <item
+                android:id="@+id/action_report_threat"
+                android:title="@string/report_threat"/>
+        </menu>
+
+    </item>
+
+</menu>

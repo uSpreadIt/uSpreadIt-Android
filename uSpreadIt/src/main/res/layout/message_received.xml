@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_received"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <it.uspread.android.message.MessageView
+        android:id="@+id/message_render"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:background="#FFBB33"
+        tools:textColor="@android:color/black"
+        tools:text="Hi !\nUn message reçu\n Tcho"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar_message_received"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/message_render"
+        android:layout_alignLeft="@id/message_render"
+        android:layout_alignStart="@id/message_render"
+        android:layout_alignRight="@id/message_render"
+        android:layout_alignEnd="@id/message_render"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/action_hyperlink"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/action_hyperlink"
+            style="?android:attr/borderlessButtonStyle"
+            android:contentDescription="@string/action_hyperlink"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/action_spread"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/action_spread"
+            style="?android:attr/borderlessButtonStyle"
+            android:contentDescription="@string/action_spread"/>
+
+        <ImageButton
+            android:id="@+id/action_ignore"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/action_ignore"
+            style="?android:attr/borderlessButtonStyle"
+            android:contentDescription="@string/action_ignore"/>
+
+        <ImageButton
+            android:id="@+id/action_moreAction"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/action_moreaction"
+            style="?android:attr/borderlessButtonStyle"
+            android:contentDescription="@string/action_moreAction"/>
+
+        <ProgressBar
+            android:id="@+id/message_waitingActionComplete"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            style="@android:style/Widget.ProgressBar.Large"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

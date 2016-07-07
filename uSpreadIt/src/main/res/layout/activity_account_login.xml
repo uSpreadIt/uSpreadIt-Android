@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_account_login"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="it.uspread.android.activity.account.LoginActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/text_username"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_username"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:hint="@string/text_password"/>
+
+        <Button
+            android:id="@+id/action_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_password"
+            android:layout_centerHorizontal="true"
+            android:text="@string/action_login"
+            android:onClick="login"/>
+
+        <Button
+            android:id="@+id/action_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/text_signup"
+            android:onClick="launchRegisterActivity"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

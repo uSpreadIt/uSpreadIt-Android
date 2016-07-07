@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message_creation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="it.uspread.android.activity.message.create.MessageCreationActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <!-- Le fait de rendre focusable ce layout permet que le MessageViewEditable puisse perdre son focus ce qui est important pour la dynamique mise en place -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <it.uspread.android.message.MessageViewEditable
+            android:id="@+id/message_render"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            tools:background="#FFBB33"
+            tools:textColor="@android:color/black"
+            tools:text="Hi !\nUn nouveau message\n Tcho"/>
+
+        <LinearLayout
+            android:id="@+id/bottomBar_message_creation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <it.uspread.android.activity.message.create.BackgroundToggleButton
+                android:id="@+id/action_backgroundSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/action_backgroundSwitch"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/action_backgroundColor"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/action_backgroundcolor"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/action_backgroundColor"/>
+
+            <ImageButton
+                android:id="@+id/action_textColor"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/action_textcolor"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/action_textColor"/>
+
+            <ImageButton
+                android:id="@+id/action_camera"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/action_camera"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/action_camera"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/action_pickImage"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/action_imagepicker"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/action_pickImage"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/action_deleteImage"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/action_delete"
+                style="?android:attr/borderlessButtonStyle"
+                android:contentDescription="@string/action_delete"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

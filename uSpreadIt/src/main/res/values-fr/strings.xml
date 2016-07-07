@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nom des activités et fragments de l'applications -->
+    <string name="app_name">uSpreadIt</string>
+    <string name="activity_login">Login</string>
+    <string name="activity_signup">Enregistrement</string>
+    <string name="activity_messages">Messages</string>
+    <string name="activity_fragment_receivedMessages">Reçus</string>
+    <string name="activity_fragment_spreadMessages">Propagés</string>
+    <string name="activity_fragment_writedMessages">Écrits</string>
+    <string name="activity_messageCreation">Nouveau Message</string>
+    <string name="activity_message">Message</string>
+    <string name="activity_scores">Page des scores</string>
+    <string name="activity_account">Gestion du compte</string>
+
+    <!-- Panneau de navigation -->
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="navigation_action_messages">Messages</string>
+    <string name="navigation_action_scores">Scores</string>
+    <string name="navigation_account">Compte</string>
+    <string name="navigation_action_account">Gestion du compte</string>
+    <string name="navigation_action_logout">Se déconnecter</string>
+
+    <!-- Nom des actions -->
+    <string name="action_login">Connexion</string>
+    <string name="action_signup">Créer un nouveau compte</string>
+    <string name="action_new">Nouveau message</string>
+    <string name="action_backgroundSwitch">Mur/Image switch</string>
+    <string name="action_textColor">Couleur de texte</string>
+    <string name="action_backgroundColor">Couleur de fond</string>
+    <string name="action_camera">Prendre une photo</string>
+    <string name="action_pickImage">Sélectionner une image</string>
+    <string name="action_send">Envoyer message</string>
+    <string name="action_spread">Propager</string>
+    <string name="action_ignore">Ignorer</string>
+    <string name="action_report">Signaler</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_hyperlink">Lien Web</string>
+    <string name="action_share">Partager</string>
+    <string name="action_moreAction">Plus</string>
+
+    <!-- Nom des type de contenu signalé -->
+    <string name="report_spam">Spam</string>
+    <string name="report_inappropriate">Contenu inapproprié</string>
+    <string name="report_threat">Menace</string>
+
+    <!-- Eléments d'interface -->
+    <string name="text_wait">Veuillez patienter&#8230;</string>
+    <string name="text_signup">Nouveau sur uSpreadIt ? S\'enregistrer ici</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Mot de passe</string>
+    <string name="text_username">Pseudo</string>
+    <string name="text_noMessageReceived">Aucun message reçus</string>
+    <string name="text_noMessageCreated">Aucun message créée</string>
+    <string name="text_noMessageSpread">Aucun message propagé</string>
+    <string name="text_link">Lien</string>
+
+    <!-- Messages des boite de dialogue -->
+    <string name="dialog_yes">Oui</string>
+    <string name="dialog_no">Non</string>
+    <string name="dialog_delete">Etes vous certain ? Votre message sera supprimé et disparaitra chez les utilisateur l\'ayant reçus</string>
+
+    <!-- Info de notification -->
+    <string name="notif_newMessage">Nouveau message</string>
+
+    <!-- Info de notification rapide -->
+    <string name="toast_login">Bienvenue</string>
+    <string name="toast_accountCreated">Compte créé</string>
+    <string name="toast_send">Message envoyé</string>
+    <string name="toast_spread">Message propagé</string>
+    <string name="toast_ignore">Message ignoré</string>
+    <string name="toast_report">Message signalé</string>
+    <string name="toast_delete">Message supprimé</string>
+
+    <!-- Exception -->
+    <string name="exception_authenticationError">Problème d\'authentification : vérifier vos identifiants</string>
+    <string name="exception_authenticationRequired">Authentification nécessaire : identifier vous</string>
+    <string name="exception_forbidden">Interdit</string>
+    <string name="exception_communicationUnreachable">Serveur injoignable : réessayer plus tard ou vérifier votre connexion</string>
+    <string name="exception_communicationUnavailable">Serveur indique qu\'il est surchargé : réessayer plus tard</string>
+    <string name="exception_communicationTimeout">Temps d\'attente de la réponse du serveur écoulé</string>
+    <string name="exception_internet">Pas d\'accès à internet : vérifier votre connexion</string>
+    <string name="exception_quota">Quota de création de messages atteint pour les derniers 24H</string>
+    <string name="exception_others">Zut, un problème est survenu</string>
+
+</resources>

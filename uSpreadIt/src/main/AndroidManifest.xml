@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.uspread.android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="it.uspread.android.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="it.uspread.android.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:name="it.uspread.android.USpreadItApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/uSpreadTheme.NoActionBar">
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" />
+        <receiver
+            android:name="it.uspread.android.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="it.uspread.android" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="it.uspread.android.gcm.GcmIntentService" />
+
+        <activity
+            android:name="it.uspread.android.activity.account.LoginActivity"
+            android:label="@string/activity_login"/>
+        <activity
+            android:name="it.uspread.android.activity.account.SignupActivity"
+            android:label="@string/activity_signup"
+            android:parentActivityName="it.uspread.android.activity.account.LoginActivity">
+        </activity>
+        <activity
+            android:name="it.uspread.android.activity.NavigationDrawerActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="it.uspread.android.activity.message.create.MessageCreationActivity"
+            android:label="@string/activity_messageCreation"
+            android:parentActivityName="it.uspread.android.activity.NavigationDrawerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".activity.message.view.MessageViewerActivity"
+            android:label="@string/activity_message"
+            android:parentActivityName="it.uspread.android.activity.message.create.MessageCreationActivity">
+        </activity>
+    </application>
+
+</manifest>

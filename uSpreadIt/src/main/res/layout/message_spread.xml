@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_spread"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <it.uspread.android.message.MessageView
+        android:id="@+id/message_render"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:background="#FFBB33"
+        tools:textColor="@android:color/black"
+        tools:text="Hi !\nUn message propagé\n Tcho"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar_message_spread"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/action_hyperlink"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/action_hyperlink"
+            style="?android:attr/borderlessButtonStyle"
+            android:contentDescription="@string/action_hyperlink"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/text_nbdiffuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:drawableRight="@drawable/action_spread"
+            android:drawableEnd="@drawable/action_spread"
+            tools:text="42"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

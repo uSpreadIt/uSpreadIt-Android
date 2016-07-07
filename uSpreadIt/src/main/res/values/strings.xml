@@ -1,0 +1,87 @@
+<resources>
+    
+    <!-- Nom des activités et fragments de l'applications -->
+    <string name="app_name">uSpreadIt</string>
+    <string name="activity_login">Log In</string>
+    <string name="activity_signup">Sign up</string>
+    <string name="activity_messages">Messages</string>
+    <string name="activity_fragment_receivedMessages">Received</string>
+    <string name="activity_fragment_spreadMessages">Spread</string>
+    <string name="activity_fragment_writedMessages">Writed</string>
+    <string name="activity_messageCreation">New Message</string>
+    <string name="activity_message">Message</string>
+    <string name="activity_scores">Hall Of Fame</string>
+    <string name="activity_account">Account</string>
+
+    <!-- Panneau de navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_action_messages">Messages</string>
+    <string name="navigation_action_scores">Hall Of Fame</string>
+    <string name="navigation_account">Account</string>
+    <string name="navigation_action_account">Manage account</string>
+    <string name="navigation_action_logout">Log Out</string>
+
+    <!-- Nom des actions -->
+    <string name="action_login">Log In</string>
+    <string name="action_signup">Sign Up</string>
+    <string name="action_new">New message</string>
+    <string name="action_backgroundSwitch">Wall/Image switch</string>
+    <string name="action_textColor">Text color</string>
+    <string name="action_backgroundColor">Background color</string>
+    <string name="action_camera">Take a photo</string>
+    <string name="action_pickImage">Pick an image</string>
+    <string name="action_send">Send message</string>
+    <string name="action_spread">Spread</string>
+    <string name="action_ignore">Ignore</string>
+    <string name="action_report">Report</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_hyperlink">Web link</string>
+    <string name="action_share">Share</string>
+    <string name="action_moreAction">More</string>
+
+    <!-- Nom des type de contenu signalé -->
+    <string name="report_spam">Spam</string>
+    <string name="report_inappropriate">Inappropriate content</string>
+    <string name="report_threat">Threat</string>
+
+    <!-- Eléments d'interface -->
+    <string name="text_wait">Please wait&#8230;</string>
+    <string name="text_signup">New on uSpreadIt ? Sign up here</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_username">Username</string>
+    <string name="text_noMessageReceived">No message received</string>
+    <string name="text_noMessageCreated">No message created</string>
+    <string name="text_noMessageSpread">No message spread</string>
+    <string name="text_link">Link</string>
+
+    <!-- Messages des boite de dialogue -->
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_delete">Are you sure ? Your message will be completely erased and will disappear from other users</string>
+
+    <!-- Info de notification -->
+    <string name="notif_newMessage">New message</string>
+
+    <!-- Info de notification rapide -->
+    <string name="toast_login">Welcome</string>
+    <string name="toast_accountCreated">Account created</string>
+    <string name="toast_send">Message sended</string>
+    <string name="toast_spread">Message spread</string>
+    <string name="toast_ignore">Message ignored</string>
+    <string name="toast_report">Message reported</string>
+    <string name="toast_delete">Message deleted</string>
+
+    <!-- Exception -->
+    <string name="exception_authenticationError">Authentication error : wrong username or password</string>
+    <string name="exception_authenticationRequired">Authentication required : please connect</string>
+    <string name="exception_forbidden">Forbidden</string>
+    <string name="exception_communicationUnreachable">Server unreachable : try again later or check yor connection</string>
+    <string name="exception_communicationUnavailable">Server unavailable : try again later</string>
+    <string name="exception_communicationTimeout">Timeout for response</string>
+    <string name="exception_internet">No internet access : check your connection</string>
+    <string name="exception_quota">Message creation quota by 24H exceeded</string>
+    <string name="exception_others">Oops, a problem happen</string>
+    
+</resources>
